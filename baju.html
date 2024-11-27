@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="baju.css">
+    <title>Produk</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="home.html" class="nav-logo">
+                <img src="img/logoup.png" alt="">
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="home.html#home" class="nav-link">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html#about" class="nav-link">Tentang</a>
+                </li>
+                <li class="nav-item">
+                    <a href="products.html#products" class="nav-link1">Produk</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Kontak</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="header-icon">
+                <a href="cart.html"><i class='bx bx-cart-alt'></i></a>
+             </div>
+        </nav>
+    </header>
+
+    <div class="flex-box">
+        <div class="left">
+            <div class="big-img">
+                <img src="img2/over.jpeg">
+            </div>
+            <div class="images">
+                <div class="small-img">
+                    <img src="img2/over2.jpeg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="img2/over.jpeg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="img2/over2.jpeg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="img2/over.jpeg" onclick="showImg(this.src)">
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <!-- <div class="url">Home > Product > T-Shirt</div> -->
+            <div class="pname">T-Shirts for Men</div>
+            <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">Rp30.000</div>
+            <div class="size">
+                <!-- <p>Size :</p> -->
+                <!-- <div class="psize active">M</div> -->
+                <!-- <div class="psize">L</div> -->
+                <!-- <div class="psize">XL</div> -->
+                <!-- <div class="psize">XXL</div> -->
+                <select name="Ukuran" id="Ukuran">
+                    <option value="Ukuran">Ukuran</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                 </select>
+            </div>
+            <div class="quantity">
+                <p>Quantity :</p>
+                <input type="number" min="1" max="1000" value="1">
+            </div>
+            <div class="btn-box">
+                <a href="cart.html"><button class="cart-btn">Tambah Ke Keranjang</button></a>
+                <button class="buy-btn">Beli Sekarang</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        let bigImg = document.querySelector('.big-img img');
+        function showImg(pic){
+            bigImg.src = pic;
+        }
+    </script>
+
+        <script src="baju.js"></script>
+    
+</body>
+</html>    

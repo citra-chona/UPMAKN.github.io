@@ -1,0 +1,61 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Login|Up</title>
+    </head>
+
+    <body>
+
+        <div class="container" id="container">
+            <div class="form-container sign-up">
+                <form>
+                    <h1>Buat Akun Baru</h1>
+                    <input type="text" placeholder="Name">
+                    <input type="password" placeholder="Password">
+                    <input type="email" placeholder="Email">
+                    <input type="Mobile Phone" placeholder="Mobile Phone">
+                    <input type="Addres" placeholder="Addres">
+                    <!-- <input type="jenis-kelamin" placeholder="Jenis Kelamin"> -->
+                     <select name="gender" id="gender">
+                        <option value="">Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                     </select>
+                    <button><a href="DashboardUP/dashboard.html">Sign Up</a></button>
+                </form>
+            </div>
+            <div class="form-container sign-in">
+                <form>
+                    <h1>Log In</h1>
+                    <input type="text" placeholder="Username">
+                    <input type="password" placeholder="Password">
+                    <a href="forgot.html">Lupa Kata Sandi </a>
+                    <button><a href="DashboardUP/dashboard.html">Sign in</a></button>
+                </form>
+            </div>
+            <div class="toggle-container">
+                <div class="toggle">
+                    <div class="toggle-panel toggle-left">
+                        <h1>Selamat Datang!</h1>
+                        <p>Masukkan detail pribadi Anda untuk menggunakan semua fitur situs</p>
+                        <button class="hidden" id="login">Sign In</button>
+                    </div>
+                    <div class="toggle-panel toggle-right">
+                        <h1>Hello, Friend!</h1>
+                        <p>Daftarkan dengan detail pribadi Anda untuk menggunakan semua fitur situs</p>
+                        <button class="hidden" id="register">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+    </html>
